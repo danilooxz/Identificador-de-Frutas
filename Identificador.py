@@ -8,7 +8,7 @@ import cv2                                      # OpenCV: usada para capturar v�
 model = load_model("keras_model.h5", compile=False)
 
 # Abre o arquivo 'labels.txt', que contém os nomes das classes (ex: "Maçã", "Banana", etc.)
-# O strip() remove espaços e quebras de linha no início e fim de cada linhaq.
+# O strip() remove espaços e quebras de linha no início e fim de cada linha.
 labels = [line.strip() for line in open("labels.txt", "r", encoding="utf-8")]
 
 # Cria um objeto que captura o vídeo da webcam padrão
